@@ -250,7 +250,7 @@ app.post("/auth/exchange", (req, res) => {
     username: record.user.username,
     avatar: record.user.avatar,
     guildId: GUILD_ID,
-    exp: Date.now() + 60 * 60 * 1000
+    exp: Date.now() + 7 * 24 * 60 * 60 * 1000
   });
 
   res.setHeader("Cache-Control", "no-store");
